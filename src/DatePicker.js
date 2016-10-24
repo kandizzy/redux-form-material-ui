@@ -14,6 +14,7 @@ export default createComponent(
   }) => ({
     ...inputProps,
     ...mapError(props),
-    onChange: (event, value) => onChange(value)
+    onChange: (event, value) => onChange(value),
+    value: inputProps.value && new Date(inputProps.value) || null//inputProps.value !== '' ? inputProps.value : null
   })
 )

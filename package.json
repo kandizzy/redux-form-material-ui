@@ -83,5 +83,8 @@
         "*.js"
       ]
     }
-  ]
+  ],
+  "dependencies": {
+    "redux-form": "^6.1.1"
+  }
 }
